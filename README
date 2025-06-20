@@ -1,0 +1,37 @@
+# audioToText
+
+Este projeto converte arquivos de áudio em texto, facilitando a transcrição automática de gravações.
+
+## Estrutura do Projeto
+
+- `main.py`: Script principal para processar os áudios e gerar transcrições.
+- `requirements.txt`: Dependências do projeto.
+- `audio/`: Pasta com arquivos de áudio a serem transcritos.
+- `transcricoes/`: Pasta onde as transcrições geradas são salvas.
+- `oldmodel/`: Transcrições geradas por um modelo anterior (para comparação).
+
+## Como usar
+
+1. Instale as dependências:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Coloque os arquivos de áudio na pasta `audio/`.
+3. Execute o script principal:
+   ```bash
+   python main.py
+   ```
+4. As transcrições serão salvas na pasta `transcricoes/`.
+
+## Dependências
+
+As dependências necessárias estão listadas em `requirements.txt`. Certifique-se de ter o Python 3 instalado.
+
+## Observações
+
+- Os arquivos em `oldmodel/` servem para comparação entre diferentes versões do modelo de transcrição.
+- O projeto pode ser adaptado para diferentes modelos de reconhecimento de voz.
+
+---
+
+Desenvolvido por Felipe B.
