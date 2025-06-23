@@ -35,9 +35,7 @@ audio_files = [f for f in os.listdir(audio_folder) if f.lower().endswith(".mp3")
 for audio_file in audio_files:
     audio_path = os.path.join(audio_folder, audio_file)
     print(f"Transcrevendo: {audio_file}")
-    result = pipe(
-        audio_path, generate_kwargs={"language": "pt"}, return_timestamps=True
-    )
+    result = pipe(audio_path, return_timestamps=True)
     texto = result["text"]
     # Salva a transcrição em um arquivo de texto
     nome_txt = os.path.splitext(audio_file)[0] + ".txt"
